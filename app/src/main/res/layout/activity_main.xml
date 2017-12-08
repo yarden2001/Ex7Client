@@ -9,10 +9,88 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/Intro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edCall"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/edSurf"
+        />
+
+    <Button
+        android:id="@+id/butCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CallBut"
+        android:layout_alignBottom="@+id/edCall"
+        android:layout_toEndOf="@+id/edCall"
+        android:layout_marginStart="21dp"
+        android:onClick="click"/>
+
+    <EditText
+        android:id="@+id/edSurf"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@+id/butEmail"
+        android:layout_alignStart="@+id/edReg"
+        android:layout_marginStart="11dp" />
+
+    <Button
+        android:id="@+id/butSurf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/butCall"
+        android:layout_below="@+id/butCall"
+        android:layout_marginTop="45dp"
+        android:text="@string/SurfBut"
+       />
+
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_alignBottom="@+id/butEmail"
+        android:layout_alignStart="@+id/edSurf" />
+
+    <Button
+        android:id="@+id/butEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="@string/EmailBut"
+        android:layout_below="@+id/butSurf"
+        android:layout_alignStart="@+id/butSurf" />
+
+    <EditText
+        android:id="@+id/edReg"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:id="@+id/butReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RegBut"
+        android:layout_alignBottom="@+id/edReg"
+        android:layout_alignStart="@+id/butEmail" />
 
 </RelativeLayout>
