@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.test.suitebuilder.annotation.Suppress;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Switch;
@@ -51,6 +52,8 @@ public class MainActivity extends Activity {
 
         Toast.makeText(this, "hello", Toast.LENGTH_LONG).show();
     }
+
+    @SuppressWarnings({"MissingPermission"})
     private void phoneNum(String phoneNum){
         String number = phoneNum;
         Intent intent = new Intent(Intent.ACTION_CALL);
